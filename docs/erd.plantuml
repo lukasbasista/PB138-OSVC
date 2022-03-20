@@ -1,0 +1,68 @@
+@startuml erd
+
+entity "Client" as client {
+  *id : number <<generated>>
+  --
+  *email : string <<unique>>
+  *name : string
+  mobileNumber : string
+  *isCompany :  boolean
+  ic : string
+  dic : string
+  *creationTime : timestamp
+  updatedAt : timestamp
+  --
+  *addressId : number
+  *bankAccountId : number
+}
+
+entity "BankAccount" as bank_account {
+  *id : number <<generated>>
+  --
+  *accountNumber : string
+  *currency : string
+}
+
+entity "Address" as address {
+  *id : number <<generated>>
+  --
+  *address : string
+  city : string
+  *postcode
+  *country
+}
+
+entity "WorkLog" as work_log {
+  *id : number <<generated>>
+  --
+  *name : string
+  description : string
+  *timeWorked : string
+  hourRate : number
+  currency : string
+  total : number
+  *workStart : timestamp
+  *workEnd : timestamp
+  *creationTime : timestamp
+  updatedAt : timestamp
+  --
+  clientId : number
+  *jobCategoryId : number
+}
+
+entity "JobCategory" as job_category {
+  *id : number <<generated>>
+  --
+  *name : text
+  descriptions : text
+
+  *creationTime : timestamp
+  updatedAt : timestamp
+}
+
+client ||--|| address
+client ||--|| bank_account
+client ||--o{ work_log
+work_log }o--|| job_category
+
+@enduml

@@ -1,0 +1,51 @@
+{
+  "name": "pb138-osvc",
+  "version": "1.0.0",
+  "description": "Web record of realized works for self-employed",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "lint": "lerna run lint --stream",
+    "start": "lerna run start --stream",
+    "build": "lerna run build --stream",
+    "prepare": "husky install && lerna bootstrap"
+  },
+  "devDependencies": {
+    "husky": "^6.0.0",
+    "lerna": "^4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.fi.muni.cz:xfrola/pb138-osvc.git"
+  },
+  "keywords": [
+    "self-employed",
+    "osvc",
+    "work-log"
+  ],
+  "bugs": {
+    "url": "https://gitlab.fi.muni.cz/xfrola/pb138-osvc/-/issues"
+  },
+  "contributors": [
+    {
+      "name": "Josef Frola",
+      "email": "josef.frola@gmail.com"
+    },
+    {
+      "name": "Marek Hamerník",
+      "email": "hamernikmarek@gmail.com"
+    },
+    {
+      "name": "Zdeněk Toufar"
+    },
+    {
+      "name": "Lukáš Bašista"
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "deep-copy-ts": "^0.5.0",
+    "yup": "^0.32.9"
+  }
+}

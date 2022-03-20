@@ -1,0 +1,83 @@
+{
+    "data": {
+        "clients": [
+            {
+                "email": "john.doe@gmail.com",
+                "name": "John Doe",
+                "mobileNumber": "+420123123123",
+                "isCompany": false,
+                "ic": "ICO",
+                "dic": "DICO",
+                "address": {
+                    "address": "Street 2, 123",
+                    "city": "City 2",
+                    "postcode": "602 02",
+                    "country": "USA"
+                },
+                "bankAccount": {
+                    "accountNumber": "4214128391/5500",
+                    "currency": "CZK"
+                },
+                "creationTime": "2021-07-03T16:57:04.871Z"
+            },
+            {
+                "email": "contact@beegcorp.com",
+                "name": "Beeg Scary Corporation",
+                "mobileNumber": "+420123123123",
+                "isCompany": true,
+                "ic": "ICO",
+                "dic": "DICO",
+                "address": {
+                    "address": "Ulica 3, 1420",
+                    "city": "Kosice 2",
+                    "postcode": "103 03",
+                    "country": "Slovakia"
+                },
+                "bankAccount": {
+                    "accountNumber": "7214168391/5500",
+                    "currency": "CZK"
+                },
+                "creationTime": "2021-07-03T16:57:04.871Z"
+            }
+        ],
+        "workLogs": [
+            {
+                "uuid": "1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed",
+                "name": "Zapracovane hodne dost",
+                "description": "Zabavna praca jak dycky",
+                "jobCategory": {
+                    "name": "programming2",
+                    "description": "beep beep boop boop",
+                    "creationTime": "2021-07-03T16:57:04.871Z"
+                },
+                "timeWorked": 90,
+                "total": 3000,
+                "workStart": "2021-05-21T00:00:00.000Z",
+                "workEnd": "2021-05-23T00:00:00.000Z",
+                "creationTime": "2021-07-03T16:57:04.871Z"
+            }
+        ],
+        "jobCategories": [
+            {
+                "name": "Unspecified",
+                "description": "No category was selected",
+                "creationTime": "2021-07-03T16:57:04.871Z"
+            },
+            {
+                "name": "Programming",
+                "description": "beep beep boop boop",
+                "creationTime": "2021-07-03T16:57:04.871Z"
+            },
+            {
+                "name": "Research",
+                "description": "Getting money for free",
+                "creationTime": "2021-07-03T16:57:04.871Z"
+            },
+            {
+                "name": "Cleaning",
+                "description": "Cleaners are the most important people in every company",
+                "creationTime": "2021-07-03T16:57:04.871Z"
+            }
+        ]
+    }
+}
